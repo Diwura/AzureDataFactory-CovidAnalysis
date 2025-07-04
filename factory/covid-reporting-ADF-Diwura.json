@@ -1,0 +1,9 @@
+{
+	"name": "covid-reporting-ADF-Diwura",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b14a94fc-77b3-4116-90d9-e5fb2e64c530",
+		"tenantId": "226a815a-495e-4e49-900e-cb199ee36bd7"
+	}
+}

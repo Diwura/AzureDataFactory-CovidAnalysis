@@ -1,0 +1,25 @@
+{
+	"name": "tr_population_data_arrived",
+	"properties": {
+		"description": "runs on the creation of data in the target folder.",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_execute_population_pipelines",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/2d617c30-3449-4f08-9716-9a1ca8de592e/resourceGroups/covid-reporting/providers/Microsoft.Storage/storageAccounts/covidreportingdiwurasa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
