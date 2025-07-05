@@ -454,10 +454,11 @@
 				"Policy": {
 					"recurrence": {
 						"frequency": "Hour",
-						"interval": 2
+						"interval": 1
 					},
 					"mode": "Microbatch"
 				},
+				"status": "Stopped",
 				"allowVNetOverride": false
 			},
 			"dependsOn": []
