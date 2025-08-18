@@ -213,6 +213,11 @@
 						"attributeMappingInfo": {
 							"attributeMappings": []
 						}
+					},
+					{
+						"attributeMappingInfo": {
+							"attributeMappings": []
+						}
 					}
 				],
 				"Relationships": []
