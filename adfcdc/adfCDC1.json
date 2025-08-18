@@ -143,7 +143,7 @@
 			{
 				"TargetEntities": [
 					{
-						"name": "processed/ecdc",
+						"name": "processed/ecdc/testing",
 						"properties": {
 							"schema": [],
 							"dslConnectorProperties": [
@@ -157,7 +157,7 @@
 								},
 								{
 									"name": "folderPath",
-									"value": "ecdc"
+									"value": "ecdc/testing"
 								}
 							]
 						}
@@ -204,17 +204,12 @@
 				},
 				"DataMapperMappings": [
 					{
+						"targetEntityName": "processed/ecdc/testing",
 						"sourceEntityName": "raw/ecdc/hospital_admissions",
 						"sourceConnectionReference": {
 							"connectionName": "ls_adls_covidreportingdl",
 							"type": "linkedservicetype"
 						},
-						"attributeMappingInfo": {
-							"attributeMappings": []
-						}
-					},
-					{
-						"targetEntityName": "processed/ecdc",
 						"attributeMappingInfo": {
 							"attributeMappings": []
 						}
