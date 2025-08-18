@@ -2669,7 +2669,7 @@
 					{
 						"SourceEntities": [
 							{
-								"name": "raw/ecdc/hospital_admissions",
+								"name": "raw/ecdc/country_response",
 								"properties": {
 									"schema": [],
 									"dslConnectorProperties": [
@@ -2683,7 +2683,7 @@
 										},
 										{
 											"name": "folderPath",
-											"value": "ecdc/hospital_admissions"
+											"value": "ecdc/country_response"
 										}
 									]
 								}
@@ -2807,7 +2807,7 @@
 					{
 						"TargetEntities": [
 							{
-								"name": "processed/hospital_admissions",
+								"name": "processed/ecdc/testing",
 								"properties": {
 									"schema": [],
 									"dslConnectorProperties": [
@@ -2821,7 +2821,7 @@
 										},
 										{
 											"name": "folderPath",
-											"value": "hospital_admissions"
+											"value": "ecdc/testing"
 										}
 									]
 								}
@@ -2868,8 +2868,8 @@
 						},
 						"DataMapperMappings": [
 							{
-								"targetEntityName": "processed/hospital_admissions",
-								"sourceEntityName": "raw/ecdc/hospital_admissions",
+								"targetEntityName": "processed/ecdc/testing",
+								"sourceEntityName": "raw/ecdc/country_response",
 								"sourceConnectionReference": {
 									"connectionName": "ls_adls_covidreportingdl",
 									"type": "linkedservicetype"
