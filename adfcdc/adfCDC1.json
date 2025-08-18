@@ -5,7 +5,7 @@
 			{
 				"SourceEntities": [
 					{
-						"name": "raw/ecdc/hospital_admissions",
+						"name": "raw/ecdc/country_response",
 						"properties": {
 							"schema": [],
 							"dslConnectorProperties": [
@@ -19,7 +19,7 @@
 								},
 								{
 									"name": "folderPath",
-									"value": "ecdc/hospital_admissions"
+									"value": "ecdc/country_response"
 								}
 							]
 						}
@@ -205,7 +205,7 @@
 				"DataMapperMappings": [
 					{
 						"targetEntityName": "processed/ecdc/testing",
-						"sourceEntityName": "raw/ecdc/hospital_admissions",
+						"sourceEntityName": "raw/ecdc/country_response",
 						"sourceConnectionReference": {
 							"connectionName": "ls_adls_covidreportingdl",
 							"type": "linkedservicetype"
